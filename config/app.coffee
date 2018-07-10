@@ -1,4 +1,4 @@
-import Web from '../src/provider/web'
+import {Web} from '@emerald-js/web'
 import Example from '../src/provider/example'
 import Serverless from '../src/provider/serverless'
 

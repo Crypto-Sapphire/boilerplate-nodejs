@@ -5,7 +5,8 @@ import ExampleAction from '../action/example'
 export default class Example
 	@register: (c) ->
 		c.configure
-			'actions': []
+			'actions': add (r) ->
+				r.action 'testHandler', 'action.example'
 
 			'action.example': (c) ->
 				new ExampleAction c

@@ -1,9 +1,8 @@
 {
   "dependencies": {
-    "@emerald-js/container": "0.0.8",
+    "@emerald-js/container": "*",
     "@emerald-js/core": "*",
-    "koa": "^2.5.1",
-    "koa-router": "^7.4.0"
+    "@emerald-js/web": "~1.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

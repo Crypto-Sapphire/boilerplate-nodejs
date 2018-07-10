@@ -7,14 +7,7 @@ export default class Serverless extends Provider
 	middleware: []
 
 	@register: (c) ->
-		c.define 'actions', add (r) ->
-			r.action 'testHandler', (ctx, next) ->
-				ctx.response.body = {
-					"hello": "world!",
-					input: ctx.req
-				}
-
-				await next()
+		c.define 'actions', add()
 
 	boot: ->
 		@mountActions()

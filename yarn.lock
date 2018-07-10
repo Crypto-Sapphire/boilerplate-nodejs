@@ -2,18 +2,26 @@
 # yarn lockfile v1
 
 
-"@emerald-js/container@0.0.8", "@emerald-js/container@~0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@emerald-js/container/-/container-0.0.8.tgz#56f571ba622a7a7ae50da6f6a08fa57b10ddb614"
+"@emerald-js/container@*", "@emerald-js/container@>=0.0.8":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@emerald-js/container/-/container-0.0.10.tgz#7a48ff3cc77ed088e2d0566d5fcbabdf55c4611f"
 
-"@emerald-js/core@*":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@emerald-js/core/-/core-0.0.4.tgz#8e091721ba0767488d0bb0137822cc75618fde81"
+"@emerald-js/core@*", "@emerald-js/core@>=0.0.4":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@emerald-js/core/-/core-0.0.5.tgz#6270a33737cdcf48ec000efd4168ddac47b41427"
   dependencies:
-    "@emerald-js/container" "~0.0.8"
+    "@emerald-js/container" ">=0.0.8"
     dotenv "^6.0.0"
     require-dir "^1.0.0"
     winston "^2.*.*"
+
+"@emerald-js/web@~1.0.2":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@emerald-js/web/-/web-1.0.4.tgz#2540682758cc6cddb5df148783ce696e91c128c0"
+  dependencies:
+    "@emerald-js/core" ">=0.0.4"
+    koa "^2.5.1"
+    koa-router "^7.4.0"
 
 "@webassemblyjs/ast@1.5.13":
   version "1.5.13"
@@ -1023,8 +1031,8 @@ call@3.x.x:
     hoek "4.x.x"
 
 caniuse-lite@^1.0.30000844:
-  version "1.0.30000862"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000862.tgz#7ca14f5079fa8f77ac814fca92d45deb4b7eff9d"
+  version "1.0.30000865"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000865.tgz#70026616e8afe6e1442f8bb4e1092987d81a2f25"
 
 catbox-memory@2.x.x:
   version "2.0.4"
@@ -1423,8 +1431,8 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.3.47:
-  version "1.3.50"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.50.tgz#7438b76f92b41b919f3fbdd350fbd0757dacddf7"
+  version "1.3.51"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.51.tgz#6a42b49daaf7f22a5b37b991daf949f34dbdb9b5"
 
 elliptic@^6.0.0:
   version "6.4.0"
@@ -1778,11 +1786,11 @@ hash-base@^3.0.0:
     safe-buffer "^5.0.1"
 
 hash.js@^1.0.0, hash.js@^1.0.3:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.4.tgz#8b50e1f35d51bd01e5ed9ece4dbe3549ccfa0a3c"
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.5.tgz#e38ab4b85dfb1e0c40fe9265c0e9b54854c23812"
   dependencies:
     inherits "^2.0.3"
-    minimalistic-assert "^1.0.0"
+    minimalistic-assert "^1.0.1"
 
 heavy@4.x.x:
   version "4.0.4"
@@ -2069,7 +2077,11 @@ js-string-escape@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/js-string-escape/-/js-string-escape-1.0.1.tgz#e2625badbc0d67c7533e9edc1068c587ae4137ef"
 
-js-tokens@^3.0.0, js-tokens@^3.0.2:
+"js-tokens@^3.0.0 || ^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+
+js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
@@ -2293,10 +2305,10 @@ long@^3.2.0:
   resolved "https://registry.yarnpkg.com/long/-/long-3.2.0.tgz#d821b7138ca1cb581c172990ef14db200b5c474b"
 
 loose-envify@^1.0.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   dependencies:
-    js-tokens "^3.0.0"
+    js-tokens "^3.0.0 || ^4.0.0"
 
 lru-cache@^4.1.1:
   version "4.1.3"
@@ -2397,7 +2409,7 @@ mimos@3.x.x:
     hoek "4.x.x"
     mime-db "1.x.x"
 
-minimalistic-assert@^1.0.0:
+minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
 
@@ -2503,7 +2515,7 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-needle@^2.2.0:
+needle@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/needle/-/needle-2.2.1.tgz#b5e325bd3aae8c2678902fa296f729455d1d3a7d"
   dependencies:
@@ -2555,12 +2567,12 @@ node-libs-browser@^2.0.0:
     vm-browserify "0.0.4"
 
 node-pre-gyp@^0.10.0:
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.10.2.tgz#e8945c20ef6795a20aac2b44f036eb13cf5146e3"
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.10.3.tgz#3070040716afdc778747b61b6887bf78880b80fc"
   dependencies:
     detect-libc "^1.0.2"
     mkdirp "^0.5.1"
-    needle "^2.2.0"
+    needle "^2.2.1"
     nopt "^4.0.1"
     npm-packlist "^1.1.6"
     npmlog "^4.0.2"
@@ -3011,8 +3023,8 @@ serialize-javascript@^1.4.0:
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.5.0.tgz#1aa336162c88a890ddad5384baebc93a655161fe"
 
 serverless-offline@^3.25.5:
-  version "3.25.5"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.25.5.tgz#59cb135a917910f4701acc4a60fe3ae487346587"
+  version "3.25.6"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.25.6.tgz#c730e71e6970c0633db1311fd1c2035c909cd96b"
   dependencies:
     babel-register "^6.18.0"
     boom "^4.2.0"
@@ -3027,8 +3039,8 @@ serverless-offline@^3.25.5:
     velocityjs "^0.9.3"
 
 serverless-webpack@^5.1.5:
-  version "5.1.5"
-  resolved "https://registry.yarnpkg.com/serverless-webpack/-/serverless-webpack-5.1.5.tgz#00ecefc91ed2339319fe3df3e6b02f9d3df7c517"
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/serverless-webpack/-/serverless-webpack-5.2.0.tgz#3ad2de29506ad79a25d0ac8dc3f0a647b4944175"
   dependencies:
     archiver "^2.1.1"
     bluebird "^3.5.1"

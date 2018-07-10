@@ -101,7 +101,12 @@ typings/
 .serverless
 
 # JavaScript
-*.js
+src/*.js
+bin/*.js
+config/*.js
+
+# Webpack
+/.webpack/
 
 # JetBrains
 /.idea/
