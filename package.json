@@ -2,7 +2,7 @@
   "dependencies": {
     "@emerald-js/container": "*",
     "@emerald-js/core": "*",
-    "@emerald-js/web": "~1.0.2"
+    "@emerald-js/web": "*"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
